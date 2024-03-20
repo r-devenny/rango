@@ -1,14 +1,13 @@
-<!DOCTYPE html>
+{% extends 'rango/base.html' %}
 
 {% load staticfiles %}
 
-<html>
+{%block title_block %}
+    About Rango
+{% endblock %}
 
-<head>
-    About
-</head>
 
-<body>
+{% block body_block %}
 
     <h1>Rango says...</h1>
         <div>
@@ -23,9 +22,6 @@
             <strong>This tutorial has been put together by Robbie De Venny</strong>
         </div>
 
-        <div>
-            <a href="/rango/">Go to index page</a>
-        </div>
 
-    </body>
-</html>
+{% endblock %}
+
